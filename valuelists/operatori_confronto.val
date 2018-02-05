@@ -1,0 +1,11 @@
+addEmptyValue:1,
+customValues:"=
+<
+>
+<=
+>=",
+name:"operatori_confronto",
+returnDataProviders:1,
+showDataProviders:1,
+typeid:34,
+uuid:"F8A67FDB-FC6D-4FE7-B7A9-01F92E8CDCCE"

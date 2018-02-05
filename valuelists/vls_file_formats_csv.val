@@ -1,0 +1,8 @@
+addEmptyValue:1,
+customValues:"Pdf|0\r
+Csv|1",
+name:"vls_file_formats_csv",
+returnDataProviders:1,
+showDataProviders:1,
+typeid:34,
+uuid:"3A745D43-77D8-4E0B-BCFD-F16A8C90EAE9"
