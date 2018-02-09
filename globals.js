@@ -3977,10 +3977,11 @@ function setSendGridSmtpProperties()
 	properties[1] = 'mail.smtp.port=587';
 	properties[2] = 'mail.smtp.auth=true';
 	properties[3] = 'mail.smtp.username=studiomiazzo';
-	properties[4] = 'mail.smtp.password=Mae165df';
+	properties[4] = 'mail.smtp.password=SG165_qsx';
 	properties[5] = 'mail.smtp.starttls.enable=true';
 	
-	return properties;
+//	return properties;
+    return setSmtpProperties();
 }
 
 /**
