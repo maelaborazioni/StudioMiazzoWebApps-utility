@@ -307,3 +307,18 @@ function PrintArray(array)
 	
 	return scopes.string.Format("[@0]", array.join(", "));
 }
+/**
+ * Verify if value is an integer
+ * 
+ * @param value
+ *
+ * @properties={typeid:24,uuid:"AF196085-AD2E-433B-9197-80D6448218B9"}
+ */
+function isInt(value)
+{
+	  if (isNaN(value)) 
+	    return false;
+	  
+	  var x = parseFloat(value);
+	  return (x | 0) === x;
+}
