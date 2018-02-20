@@ -3968,27 +3968,6 @@ function refreshRecords(fs, type)
  * 
  * @return {Array<String>}
  * 
- * @properties={typeid:24,uuid:"108B7396-0192-4A11-B19B-9BA12488E0F6"}
- */
-function setSendGridSmtpProperties()
-{
-	var properties = new Array();
-	properties[0] = 'mail.smtp.host=smtp.sendgrid.net';
-	properties[1] = 'mail.smtp.port=587';
-	properties[2] = 'mail.smtp.auth=true';
-	properties[3] = 'mail.smtp.username=studiomiazzo';
-	properties[4] = 'mail.smtp.password=SG165_qsx';
-	properties[5] = 'mail.smtp.starttls.enable=true';
-	
-//	return properties;
-    return setSmtpProperties();
-}
-
-/**
- * Vedi <a href="https://javamail.java.net/nonav/docs/api/com/sun/mail/smtp/package-summary.html">qui</a> per un elenco delle proprietà supportate
- * 
- * @return {Array<String>}
- * 
  * @properties={typeid:24,uuid:"905BEED0-6FA2-462F-9F6B-09A605224BD5"}
  */
 function setSmtpProperties()
@@ -3999,6 +3978,22 @@ function setSmtpProperties()
 	properties[2] = 'mail.smtp.auth=true';
 	properties[3] = 'mail.smtp.username=studiomiazzo@gmail.com';
 	properties[4] = 'mail.smtp.password=Mae165SM';
+	properties[5] = 'mail.smtp.starttls.enable=true';
+	
+	return properties;
+}
+
+/**
+ * @properties={typeid:24,uuid:"BA54D228-8FED-48B0-9880-D206DE03529B"}
+ */
+function setSparkPostSmtpProperties()
+{
+	var properties = new Array();
+	properties[0] = 'mail.smtp.host=smtp.sparkpostmail.com';
+	properties[1] = 'mail.smtp.port=587';
+	properties[2] = 'mail.smtp.auth=true';
+	properties[3] = 'mail.smtp.username=SMTP_Injection';
+	properties[4] = 'mail.smtp.password=b9d2243c34af4a78ee6aca6eafdefb50048e666b';
 	properties[5] = 'mail.smtp.starttls.enable=true';
 	
 	return properties;
@@ -4127,7 +4122,7 @@ function sendMailAdviceToUser(mailAddress,subject,message,from)
 {
 	if (mailAddress && plugins.mail.isValidEmailAddress(mailAddress)) 
 	{
-		var properties = globals.setSendGridSmtpProperties();
+		var properties = globals.setSparkPostSmtpProperties();
 		
 		// invia il messaggio all'indirizzo mail specificato 
 		var success = plugins.mail.sendMail
@@ -4173,7 +4168,7 @@ function sendMailAdviceToUsers(subject,message,from)
 				{
 					if (emailaddress && plugins.mail.isValidEmailAddress(emailaddress)) 
 					{
-						var properties = globals.setSendGridSmtpProperties();
+						var properties = globals.setSparkPostSmtpProperties();
 						
 						// inviare agli utenti dei livelli inferiori specificati 
 						var success = plugins.mail.sendMail
