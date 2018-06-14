@@ -3987,13 +3987,29 @@ function setSmtpProperties()
  * @properties={typeid:24,uuid:"BA54D228-8FED-48B0-9880-D206DE03529B"}
  */
 function setSparkPostSmtpProperties()
+{	
+	var properties = new Array();
+	properties[0] = 'mail.smtp.host=smtp.sparkpostmail.com';
+	properties[1] = 'mail.smtp.port=587';
+	properties[2] = 'mail.smtp.auth=true';
+	properties[3] = 'mail.smtp.username=SMTP_Injection';
+	properties[4] = 'mail.smtp.password=015e2b306072ac4b7de06a8143a98e16cc550ae6';
+	properties[5] = 'mail.smtp.starttls.enable=true';
+	
+	return properties;
+}
+
+/**
+ * @properties={typeid:24,uuid:"FBF38AC2-5A2E-4D03-83F0-E077EF3BC898"}
+ */
+function setTestSmtpProperties()
 {
 	var properties = new Array();
 	properties[0] = 'mail.smtp.host=smtp.sparkpostmail.com';
 	properties[1] = 'mail.smtp.port=587';
 	properties[2] = 'mail.smtp.auth=true';
 	properties[3] = 'mail.smtp.username=SMTP_Injection';
-	properties[4] = 'mail.smtp.password=b9d2243c34af4a78ee6aca6eafdefb50048e666b';
+	properties[4] = 'mail.smtp.password=015e2b306072ac4b7de06a8143a98e16cc550ae6';
 	properties[5] = 'mail.smtp.starttls.enable=true';
 	
 	return properties;

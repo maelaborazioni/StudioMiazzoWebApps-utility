@@ -359,13 +359,6 @@ uuid:"9D16993E-A51E-4970-B05B-5538273CC4DB"
 {
 encapsulation:0,
 mimeType:"image/png",
-name:"hr_min_edit_round.png",
-typeid:37,
-uuid:"7B6488DC-00FB-4531-9AED-4D58134C2789"
-},
-{
-encapsulation:0,
-mimeType:"image/png",
 name:"hr_min_ok_round2.png",
 typeid:37,
 uuid:"7D822D14-6531-4DD1-AFB8-8EEBF9CA6AD4"
