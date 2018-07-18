@@ -4164,7 +4164,7 @@ function sendMailAdviceToUser(mailAddress,subject,message,from)
  */
 function sendMailAdviceToUsers(subject,message,from)
 {
-	/** @type {JSFoundset<db:/svy_framework/sec_user>} */
+	/** @type {JSFoundSet<db:/svy_framework/sec_user>} */
 	var fs = databaseManager.getFoundSet('svy_framework','sec_user');
 	if(fs.find())
 	{
