@@ -2688,6 +2688,25 @@ function getLastDatePeriodo(periodo,includeTimePart)
 }
 
 /**
+ * @param {Date} day
+ * 
+ * @return Date
+ * 
+ *
+ * @properties={typeid:24,uuid:"ADDAEB08-A0F4-46A9-A1D1-414085C884E9"}
+ */
+function getNextPeriodFirstDate(day)
+{
+	var y = day.getFullYear();
+	var m = day.getMonth();
+	var d = null;
+	
+	d = y == 12 ? new Date(y + 1, 1, 1) : new Date(y , m + 1, 1) ;
+	
+	return d;
+}
+
+/**
  * @param {{ name: String, [fs]: JSFoundset, [width]: Number, [blocking]: Boolean, [height]: Number, [title]: String }} params
  * 
  * @properties={typeid:24,uuid:"F483E5E9-73B9-4411-B0B7-948C8939673D"}
