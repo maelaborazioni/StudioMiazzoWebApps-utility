@@ -94,7 +94,9 @@ var MimeTypes =
 var FileExtension =
 {
 	PDF : '.pdf',
-	RTF : '.rtf'
+	RTF : '.rtf',
+	TXT : '.txt',
+	TRK : '.trk'
 }
 
 /**
@@ -4028,7 +4030,7 @@ function setTestSmtpProperties()
 	properties[1] = 'mail.smtp.port=587';
 	properties[2] = 'mail.smtp.auth=true';
 	properties[3] = 'mail.smtp.username=SMTP_Injection';
-	properties[4] = 'mail.smtp.password=015e2b306072ac4b7de06a8143a98e16cc550ae6';
+	properties[4] = 'mail.smtp.password=61e505505434a613b7068f33fb434b3745a9f6e9';
 	properties[5] = 'mail.smtp.starttls.enable=true';
 	
 	return properties;
