@@ -96,7 +96,8 @@ var FileExtension =
 	PDF : '.pdf',
 	RTF : '.rtf',
 	TXT : '.txt',
-	TRK : '.trk'
+	TRK : '.trk',
+	CSV : '.csv'
 }
 
 /**
