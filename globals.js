@@ -4,9 +4,16 @@
 var terminator = (APPLICATION_TYPES.WEB_CLIENT == application.getApplicationType() ? new Continuation() : null);
 
 /**
- * @properties={typeid:35,uuid:"8D5A22CE-E594-448B-ABC7-6B42C4665849",variableType:-4}
+ * @type {String}
+ * @properties={typeid:35,uuid:"8D5A22CE-E594-448B-ABC7-6B42C4665849"}
  */
 var customer_db_name = null;
+
+
+/**@type {String}
+ * @properties={typeid:35,uuid:"4A0B8B96-39DA-4BDC-8877-39011AD55D9C"}
+ */
+var server_db_name = null;
 
 /**
  * String constants for dialogs. Values are properties' name in lowercase.
@@ -3056,12 +3063,12 @@ function openJSDatePicker(event, params)
 {		
 	var datePicker = new JSDatePicker();
 	
-	var winX = application.getWindow().getX();
-	var winY = application.getWindow().getY();
-	var elemX = forms[event.getFormName()].elements[event.getElementName()].getLocationX();
-	var elemY = forms[event.getFormName()].elements[event.getElementName()].getLocationY();
-	var elemW = forms[event.getFormName()].elements[event.getElementName()].getWidth();
-	var elemH = forms[event.getFormName()].elements[event.getElementName()].getHeight();
+//	var winX = application.getWindow().getX();
+//	var winY = application.getWindow().getY();
+//	var elemX = forms[event.getFormName()].elements[event.getElementName()].getLocationX();
+//	var elemY = forms[event.getFormName()].elements[event.getElementName()].getLocationY();
+//	var elemW = forms[event.getFormName()].elements[event.getElementName()].getWidth();
+//	var elemH = forms[event.getFormName()].elements[event.getElementName()].getHeight();
 
 	// required parameters
 	datePicker.callback.formName = params.formName ;

@@ -278,3 +278,36 @@ function GetMonth(period)
 {
 	return globals.trunc(period % 100);
 }
+
+/**
+ * Ritorna il nome del giorno nel formato per l'indicazione in giornaliera
+ * 
+ * @param {Date} day
+ * @type {String}
+ * 
+ * @properties={typeid:24,uuid:"8F4DD225-1A8B-4A83-84F8-49544F1D494F"}
+ */
+function GetDayName(day){
+
+	/** @type {Date} */
+	var dgiorno = day 
+	
+    switch (dgiorno.getDay()){
+     
+        case 0 : return 'DO'
+                 break
+        case 1 : return 'LU'
+                 break
+        case 2 : return 'MA'
+                 break                      
+        case 3 : return 'ME'
+                 break
+        case 4 : return 'GI'
+                 break                      
+        case 5 : return 'VE'
+                 break                      
+        case 6 : return 'SA'
+                 break                      
+        default : return 'default'
+    }
+}
